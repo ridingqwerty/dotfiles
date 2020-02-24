@@ -1,0 +1,51 @@
+!-------------------------------------------------------------------------------
+! URxvt settings
+! Modular files under ~/.Xresources.d/
+!-------------------------------------------------------------------------------
+
+URxvt.depth:                32
+URxvt.geometry:             90x30
+URxvt.transparent:          false
+URxvt.fading:               0
+!URxvt.urgentOnBell:         true
+!URxvt.visualBell:           true
+URxvt.loginShell:           true
+URxvt.saveLines:            50
+URxvt.internalBorder:       3
+URxvt.lineSpace:            1
+URxvt.intensityStyles:      false
+
+! Fonts
+URxvt.allow_bold:           false
+URxvt*font:                 xft:FiraCode:pixelsize=12,xft:Symbola:pixelsize=12,xft:Noto Color Emoji:pixelsize=12
+URxvt*boldFont:             xft:FiraCode:Bold:pixelsize=12
+URxvt*letterSpace:          0
+
+! Scrollbar
+URxvt.scrollStyle:          rxvt
+URxvt.scrollBar:            false
+
+! Perl extensions
+!URxvt.perl-ext-common:      default,matcher,resize-font
+URxvt.perl-ext-common:      default,matcher,resize-font,unichr
+URxvt.matcher.button:       1
+URxvt.urlLauncher:          firefox
+!URxvt*perl-lib:             /home/gkoenig/.urxvt/ext
+
+! Cursor
+URxvt.cursorBlink:          true
+!URxvt.cursorColor:          #657b83
+URxvt.cursorColor:          #cb4b16
+URxvt.cursorUnderline:      false
+
+! Pointer
+URxvt.pointerBlank:         true
+
+!! Keybinds
+#include ".Xresources.d/keybinds"
+
+!! Colors
+#include ".Xresources.d/colors"
+
+!! xcalc theme
+#include ".Xresources.d/xcalc"

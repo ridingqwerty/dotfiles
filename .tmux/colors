@@ -14,22 +14,22 @@ set -g window-active-style 'fg=white,bg=black'
 #set -g window-active-style 'fg=white,bg=default'
 
 
-# pane border                                                      
+# pane border
 #set -g pane-border-style 'fg=black,bg=brightblack'
 set -g pane-border-style 'fg=black,bg=default'
 #set -g pane-active-border-style 'fg=black,bg=black'
 set -g pane-active-border-style 'fg=black,bg=default'
-                                                                   
-# command line/message text                                        
-#set -g message-bg black                                            
-#set -g message-fg yellow                                           
-                                                                   
-# pane number display                                              
-#set -g display-panes-active-colour yellow                          
-#set -g display-panes-colour brightblue                             
-                                                                   
-# clock                                                            
-setw -g clock-mode-colour yellow                                   
+
+# command line/message text
+#set -g message-bg black
+#set -g message-fg yellow
+
+# pane number display
+#set -g display-panes-active-colour yellow
+#set -g display-panes-colour brightblue
+
+# clock
+setw -g clock-mode-colour yellow
 
 # modes (copy?)
 set -g mode-fg colour160

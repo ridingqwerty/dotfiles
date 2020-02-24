@@ -1,0 +1,27 @@
+! Font size bind
+URxvt.keysym.C-M-j:         resize-font:smaller
+URxvt.keysym.C-M-k:         resize-font:bigger
+URxvt.keysym.C-M-l:         resize-font:reset
+
+! (Testing) Font change
+URxvt.keysym.C-M-h:         command:\033]710;xft:Hellvetica,pixelsize=12\007\033]711;Hellvetica\007
+
+! Home/End keys
+URxvt.keysym.Home:          \033[1~
+URxvt.keysym.End:           \033[4~
+URxvt.keysym.KP_Home:       \033[1~
+URxvt.keysym.KP_End:        \033[4~
+
+! Adjust transparency (wip)
+! hex #002b36 derived from '*background' setting
+URxvt.keysym.C-M-q:         command:\033]11;[55]#002b36\007
+URxvt.keysym.C-M-w:         command:\033]11;[65]#002b36\007
+URxvt.keysym.C-M-e:         command:\033]11;[75]#002b36\007
+URxvt.keysym.C-M-r:         command:\033]11;[85]#002b36\007
+URxvt.keysym.C-M-t:         command:\033]11;[95]#002b36\007
+URxvt.keysym.C-M-y:         command:\033]11;[15]#002b36\007
+
+! disable keycap picture mode (interferes with unicode input in qmk)
+URxvt.iso14755:             false
+URxvt.iso14755_52:          false
+
